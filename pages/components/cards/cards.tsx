@@ -34,7 +34,7 @@ export const Card_Component = ({TO_DO_LIST}: CardProps) => {
         <div>
 
           {toDos.map((item: any, index: number) => (
-            <div className="flex justify-center">
+            <div key={index + 1}  className="flex justify-center">
               <div className=" relative justify-center mt-6">
                 <div className="absolute flex top-0 right-0 p-3 space-x-1">
                   <span>
