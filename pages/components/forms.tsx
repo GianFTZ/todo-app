@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Forms_Component = () => {
+export const Forms_Component = (props) => {
   const [description, setDescription] = useState ("")
   const handleCreateClick = async () => {
     console.log("handleCreate")
@@ -37,3 +37,5 @@ export const Forms_Component = () => {
         </form>
     )
 }
+
+export default Forms_Component
