@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Forms_Component = (props) => {
+export const Forms_Component = (props: any) => {
   const [description, setDescription] = useState ("")
   const handleCreateClick = async () => {
     console.log("handleCreate")
