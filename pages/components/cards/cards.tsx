@@ -7,7 +7,7 @@ interface CardProps {
     TO_DO_LIST: any[];
 }
 
-export const Card_Component = ({TO_DO_LIST}: CardProps) => {
+export const Card_Component = (TO_DO_LIST: CardProps) => {
   
   const [toDos, setTodos] = useState<any[]>([
     ...TO_DO_LIST
