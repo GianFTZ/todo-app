@@ -7,7 +7,7 @@ interface CardProps {
     TO_DO_LIST: any[];
 }
 
-export const Card_Component = ({TO_DO_LIST}: CardProps) => {
+export const Card_Component = ({TO_DO_LIST}) => {
   
   const [toDos, setTodos] = useState<any[]>([
     ...TO_DO_LIST
@@ -56,3 +56,5 @@ export const Card_Component = ({TO_DO_LIST}: CardProps) => {
         </div>
     )
 }
+
+export default Card_Component

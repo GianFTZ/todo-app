@@ -1,12 +1,8 @@
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
-import { useState } from "react";
 import { getAlltodo, Todo } from "../lib/db";
 import { Card_Component } from "./components/cards/cards";
 import { Forms_Component } from "./components/forms";
 import { Nav_Component } from "./components/navbar/nav";
-import { TrashSVG } from "./components/svgs/trashSVG";
-import { WriteSVG } from "./components/svgs/writeSvg";
-
 export const getServerSideProps: GetServerSideProps = async () => {
   const toDo = await getAlltodo();
   return {

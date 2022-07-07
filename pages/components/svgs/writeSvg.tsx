@@ -1,4 +1,4 @@
-export const WriteSVG = () => {
+export const WriteSVG = (props: any) => {
   return (
     <span>
       <svg
@@ -18,3 +18,6 @@ export const WriteSVG = () => {
     </span>
   );
 };
+
+
+export default WriteSVG
